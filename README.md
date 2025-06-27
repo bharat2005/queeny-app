@@ -4,8 +4,9 @@
 It connects users to stylists, catalogs, blogs, and salons in one elegant experience —  
 the **third app** in my journey to build **100 Emotionally Designed MVPs**.
 
-🎬 [Watch Demo on YouTube](https://youtu.be/YOUR_QUEENY_DEMO_LINK)  
-📱 [Watch Insta Reel](https://www.instagram.com/reel/YOUR_QUEENY_REEL_LINK)
+🎬 [Watch Demo on YouTube](https://youtu.be/IhErMg8jaLU?feature=shared)  
+📱 [Watch Insta Reel Part 1](https://www.instagram.com/reel/DLSoEDrSxya/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
+📱 [Watch Insta Reel Part 2](https://www.instagram.com/reel/DLSr0DyyDIk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
 
 ---
 
