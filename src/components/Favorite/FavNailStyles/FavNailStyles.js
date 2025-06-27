@@ -13,7 +13,7 @@ const {data, error} = useNailStyleLikesList()
 
             <LikesHeaaderCounter count={data?.length}/>
       <FlatList
-        numColumns={3}
+        numColumns={2}
         data={data}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({item, index})=> <NailStyleCard item={item} />}

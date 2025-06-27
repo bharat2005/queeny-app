@@ -3,7 +3,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react'
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth'
 import {auth, db} from '../services/firebase'
 import { router } from 'expo-router'
-import { doc, setDoc, Timestamp } from 'firebase/firestore'
+import { doc, getDoc, setDoc, Timestamp } from 'firebase/firestore'
 
 const AuthContext = createContext()
 
@@ -12,9 +12,10 @@ const AuthContextProvider = ({children}) => {
     const [user, setUser] = useState(null)
 
 useEffect(()=>{
-    const unsub = onAuthStateChanged(auth, (u)=> {
+    const unsub = onAuthStateChanged(auth,async(u)=> {
         setUser(u)
-        u ? router.replace('/(main)/home') : router.replace('/(auth)/prestart')
+         u ? router.replace('/(main)/home') : router.replace('/(auth)/prestart')
+          
     })
 
     return ()=> unsub()
