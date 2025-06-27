@@ -1,50 +1,81 @@
-# Welcome to your Expo app 👋
+# 👑 Queeny — Salon Booking & Style Inspiration MVP
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Queeny** is a beautifully designed salon booking app with an emotional touch.  
+It connects users to stylists, catalogs, blogs, and salons in one elegant experience —  
+the **third app** in my journey to build **100 Emotionally Designed MVPs**.
 
-## Get started
+🎬 [Watch Demo on YouTube](https://youtu.be/YOUR_QUEENY_DEMO_LINK)  
+📱 [Watch Insta Reel](https://www.instagram.com/reel/YOUR_QUEENY_REEL_LINK)
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+- 💇 Browse 24+ screens of hairstyles, nail styles & stylist blogs
+- 🏷️ Catalog of styles → stylists → salons → reviews
+- 📍 Location support (maps, email & WhatsApp sharing)
+- 🎥 Style feeds in photo & video formats (with Expo Video)
+- 🔍 Dynamic filtering (by category, trending, etc.)
+- 🧾 Magazine section for hair/nail content
+- 💬 Optimistic likes, favorites & hydration for personalized feeds
+- 🙋 View stylist profiles with all linked content
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🖼️ Banner Preview
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+![Queeny Banner](./media/Queeny%20Banner.png)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🧠 Tech Stack
 
-When you're ready, run:
+- **React Native (Expo)**
+- **Firebase** (Auth, Firestore, Storage)
+- **TanStack Query** – Infinite scroll, filtering & mutations
+- **Reanimated**, **RN Paper**, **Date Picker**, **Tab View**
+- **Expo Video**, **Expo Linking**, **Gradient UI**, **Carousel**
 
-```bash
-npm run reset-project
+---
+
+## 🛠️ Setup Instructions
+
+1. Clone the repo:
+```
+git clone https://github.com/bharat2005/queeny-app.git
+cd queeny-app
+```
+2. Install dependencies
+```
+npm install
+```
+3. Rename the file example.env to .env
+4. Update .env with your own configuration, e.g.:
+```
+# Rename this file to ".env" before use
+# Replace XXXX's with your own Firebase config keys 
+API_KEY=XXXX
+AUTH_DOMAIN=XXXX
+PROJECT_ID=XXXX
+STORAGE_BUCKET=XXXX
+MESSAGING_SENDER_ID=XXXX
+APP_ID=XXXX
+MEASURMENT_ID=XXXX
+```
+ 5. Run the app 
+```
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+### ⚠️ Note on Firestore Data
 
-To learn more about developing your project with Expo, look at the following resources:
+This app uses Firestore to fetch catalog and product feed data.
+If you're running the app locally with your own Firebase project, you'll need to manually seed your Firestore with product/category documents — otherwise, the feed may appear empty.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 📄 License  
+This project is licensed under the [MIT License](./LICENSE).
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
